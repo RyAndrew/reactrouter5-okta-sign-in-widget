@@ -34,7 +34,7 @@ const Home = () => {
         Secret123$</div>);
 
     //after you login via an idp you must do this step
-    //since we redirect back to the home page after login - this will work but user experience is very poor
+    //since we redirect back to the home page after login - this works but user experience is poor
     //check if we have an okta session, if so, get a token and reload
     oktaAuth.session.exists().then(function (sessionExists) {
         if (sessionExists) {
@@ -60,7 +60,8 @@ const Home = () => {
       <p style={redStyle}>
         This example relies on 3rd party cookies which will be deprecated in 2023!<br/>
         Incognito Mode will not work for IDP login!<br/>
-        Read more here: <a href='https://support.okta.com/help/s/article/FAQ-How-Blocking-Third-Party-Cookies-Can-Potentially-Impact-Your-Okta-Environment?language=en_US'>https://support.okta.com/help/s/article/FAQ-How-Blocking-Third-Party-Cookies-Can-Potentially-Impact-Your-Okta-Environment?language=en_US</a>
+        Read more here: <a href='https://support.okta.com/help/s/article/FAQ-How-Blocking-Third-Party-Cookies-Can-Potentially-Impact-Your-Okta-Environment?language=en_US'>https://support.okta.com/help/s/article/FAQ-How-Blocking-Third-Party-Cookies-Can-Potentially-Impact-Your-Okta-Environment?language=en_US</a><br/>
+        Documentation on this approach: <a href='https://github.com/okta/okta-signin-widget#idp-discovery'>https://github.com/okta/okta-signin-widget#idp-discovery</a>
       </p>
       <br/>
       {loginDemoUserCreds}<br/>
