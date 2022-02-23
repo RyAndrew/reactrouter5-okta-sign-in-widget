@@ -61,7 +61,10 @@ const Home = () => {
         This example relies on 3rd party cookies which will be deprecated in 2023!<br/>
         Incognito Mode will not work for IDP login!<br/>
         Read more here: <a href='https://support.okta.com/help/s/article/FAQ-How-Blocking-Third-Party-Cookies-Can-Potentially-Impact-Your-Okta-Environment?language=en_US'>https://support.okta.com/help/s/article/FAQ-How-Blocking-Third-Party-Cookies-Can-Potentially-Impact-Your-Okta-Environment?language=en_US</a><br/>
-        Documentation on this approach: <a href='https://github.com/okta/okta-signin-widget#idp-discovery'>https://github.com/okta/okta-signin-widget#idp-discovery</a>
+        Documentation on this approach: <a href='https://github.com/okta/okta-signin-widget#idp-discovery'>https://github.com/okta/okta-signin-widget#idp-discovery</a><br/>
+        <br/>
+        <b>What is a better alternative?</b><br/>
+        Using webfinger and redirects: <a href='https://reactrouter5-okta-auth-js.glitch.me/'>https://reactrouter5-okta-auth-js.glitch.me/</a>
       </p>
       <br/>
       {loginDemoUserCreds}<br/>
